@@ -9,10 +9,10 @@
     
 </head>
 <body>
-  <nav class="bg-white">
-    <div class="max-w-medium flex flex-wrap items-center justify-between mx-auto py-4 md:py-6 sticky top-0 z-50 px-6 xl:px-0">
+  <nav class="bg-white fixed top-0 left-0 right-0 z-50">
+    <div class="max-w-medium flex flex-wrap items-center justify-between mx-auto py-4 md:py-6  px-6 xl:px-0">
 
-        <div><a href="#"><img src="/dist/img/logo.svg" alt="logo firmy giarddesign"></a></div>
+        <div><a href="#"><img src="dist/img/logo.svg" alt="logo firmy giarddesign"></a></div>
 
         <button class="hamburger hamburger--collapse md:hidden p-2" type="button" id="hamburgerBtn">
             <span class="hamburger-box">
@@ -86,9 +86,9 @@
         </div>
     </div>
 </nav>
-  <header>
+  <header class="mt-16">
     <!--SLIDER CONTAINER-->
-    <div id="sliderContainer" class="max-w-large mx-auto px-2 sm:px-10 md:px-2 lg:px-10 xxl:px-0">
+    <div id="sliderContainer" class="max-w-large mx-auto px-2 sm:px-10 md:px-2 lg:px-10 xxl:px-0 ">
    
     
 
@@ -103,7 +103,7 @@
                 <p>Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.</p>
                 <div class="
                 flex 
-                flex-col lg:flex-wrap
+               flex-wrap
                 justify-center
                 items-center
                  gap-4 xl:gap-9 
@@ -115,7 +115,7 @@
                      pt-2 xl:pt-3 
                      pb-2 xl:pb-4 
                      rounded-full
-                     w-full sm:w-3/4"><a href="#">Skontaktuj się z nami</a></button>
+                     w-full sm:w-3/4 xl:w-auto"><a href="#">Skontaktuj się z nami</a></button>
                     <button class="
                     bg-transparent 
                     text-green 
@@ -125,7 +125,7 @@
                     pt-2 xl:pt-3 
                     pb-2 xl:pb-4 
                      rounded-full
-                     w-full sm:w-3/4"><a href="#" class="flex justify-center items-center gap-2">Zobacz nasze realizacje <img src="dist/img/arrow-down.svg" alt=""></a></button>
+                     w-full sm:w-3/4 xl:w-auto"><a href="#" class="flex justify-center items-center gap-2">Zobacz nasze realizacje <img src="dist/img/arrow-down.svg" alt=""></a></button>
                 </div>
             </div>
             <div class="w-full md:w-1/2 relative">
@@ -163,7 +163,7 @@
                 <p>Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.</p>
                 <div class="
                 flex 
-                flex-col lg:flex-wrap
+                flex-wrap
                 justify-center
                 items-center
                  gap-4 xl:gap-9 
@@ -175,7 +175,7 @@
                      pt-2 xl:pt-3 
                      pb-2 xl:pb-4 
                      rounded-full
-                     w-full sm:w-3/4"><a href="#">Skontaktuj się z nami</a></button>
+                     w-full sm:w-3/4 xl:w-auto"><a href="#">Skontaktuj się z nami</a></button>
                     <button class="
                     bg-transparent 
                     text-green 
@@ -185,7 +185,7 @@
                     pt-2 xl:pt-3 
                     pb-2 xl:pb-4 
                      rounded-full
-                     w-full sm:w-3/4"><a href="#" class="flex justify-center items-center gap-2">Zobacz nasze realizacje <img src="dist/img/arrow-down.svg" alt=""></a></button>
+                     w-full sm:w-3/4 xl:w-auto"><a href="#" class="flex justify-center items-center gap-2">Zobacz nasze realizacje <img src="dist/img/arrow-down.svg" alt=""></a></button>
                 </div>
             </div>
             <div class="w-full md:w-1/2 relative">
@@ -225,7 +225,7 @@
                 <p>Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.</p>
                 <div class="
                 flex 
-                flex-col lg:flex-wrap
+                flex-wrap
                 justify-center
                 items-center
                  gap-4 xl:gap-9 
@@ -237,7 +237,7 @@
                      pt-2 xl:pt-3 
                      pb-2 xl:pb-4 
                      rounded-full
-                     w-full sm:w-3/4"><a href="#">Skontaktuj się z nami</a></button>
+                     w-full sm:w-3/4 xl:w-auto"><a href="#">Skontaktuj się z nami</a></button>
                     <button class="
                     bg-transparent 
                     text-green 
@@ -247,7 +247,7 @@
                     pt-2 xl:pt-3 
                     pb-2 xl:pb-4 
                      rounded-full
-                     w-full sm:w-3/4"><a href="#" class="flex justify-center items-center gap-2">Zobacz nasze realizacje <img src="dist/img/arrow-down.svg" alt=""></a></button>
+                     w-full sm:w-3/4 xl:w-auto" ><a href="#" class="flex justify-center items-center gap-2">Zobacz nasze realizacje <img src="dist/img/arrow-down.svg" alt=""></a></button>
                 </div>
             </div>
             <div class="w-full md:w-1/2 relative">
@@ -412,6 +412,85 @@
         </div>
     </div>
 </section>
+  <footer class="bg-black text-white">
+    <div class="
+    flex 
+    flex-col
+    justify-start 
+    py-20 
+    mx-auto
+    px-6 xl:px-0
+    max-w-small
+    ">
+        <div>
+            <div class="
+            flex 
+            flex-col lg:flex-row
+            justify-evenly lg:justify-between
+            items-center 
+            mb-16">
+                <a href="#"><img src="dist/img/logo-light.svg" alt="" class="
+                mb-4 md:mb-0"></a>
+                <div class="
+                flex
+                flex-col lg:flex-row
+                justify-center 
+                items-center 
+                gap-6">
+                    <p class="text-base text-center md:text-left"> Daj znać, co możemy dla Ciebie zrobić!</p>
+                    <button type="button" class="
+                        text-white
+                        bg-green
+                        focus:outline-none  
+                        font-medium 
+                        rounded-full 
+                        text-base 
+                        px-6 
+                        py-3">
+                        Skontaktuj
+                        się z nami</button>
+                </div>
+            </div>
+            <hr>
+            <div class="
+            flex 
+            flex-col xl:flex-row
+            gap-8 xl:gap-0
+            justify-between 
+            items-center 
+            mt-16">
+                <ul class="
+                hidden sm:flex
+                
+                gap-8 lg:gap-10 xl:gap-12">
+                    <li><a href="">Kontakt</a></li>
+                    <li><a href="">Instagram</a></li>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Linkedin</a></li>
+                </ul>
+                <div class="
+                flex
+                flex-col sm:flex-row
+                gap-6 md:gap-12
+                xs:mt-8 lg:mt-0">
+                    <a href="#" class="text-center">000-000-000</a>
+                    <a href="">giarddesign@kontakt.pl</a>
+                </div>
+            </div>
+        </div>
+        <div class="
+        flex 
+        flex-col sm:flex-row
+        gap-4 sm:gap-0
+         justify-evenly lg:justify-between 
+        items-center 
+        mt-16 md:mt-28">
+            <p>Prawa zastrzeżone &copy 2022</p>
+            <p>made by </p>
+            <a href=""><img src="dist/img/logo-full-light.png" alt=""></a>
+        </div>
+    </div>
+</footer>
 
     <script src="dist/js/main.min.js"></script>
 </body>
