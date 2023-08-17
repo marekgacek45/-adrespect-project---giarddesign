@@ -82,8 +82,14 @@ function startSlider() {
 startSlider();
 
 //masonry
+const masonryBtn = document.querySelector('#masonryBtn')
+const masonryGradient = document.querySelector('#masonryGradient')
+const test = document.querySelector('#test')
 
-
+const masonryHandler = () =>{
+test.classList.toggle('hidden')
+}
 //listeners
+masonryBtn.addEventListener('click',masonryHandler)
 hamburgerBtn.addEventListener('click',navbarDropdownHandler)
 dropdownBtn.addEventListener('click', dropdownHandler);
