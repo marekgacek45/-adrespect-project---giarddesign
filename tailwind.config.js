@@ -10,6 +10,9 @@ module.exports = {
         'white': '#FFFFFF',
         'black': '#111111',
       },
+      maxWidth: {
+        'nav': '1262px',
+      },
     },
   },
   plugins: [],

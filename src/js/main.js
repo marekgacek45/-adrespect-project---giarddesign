@@ -1,12 +1,24 @@
-const hamburgerBtn = document.querySelector('.hamburger')
-const navbarMobile = document.querySelector('#navbar-mobile')
 
-const navHandler = ()=>{
+//mobile menu
+const hamburgerBtn = document.querySelector('#hamburgerBtn')
+const navbarDropdown = document.querySelector('#navbarDropdown')
+
+const navbarDropdownHandler = () =>{
     hamburgerBtn.classList.toggle('is-active')
-    navbarMobile.classList.toggle('top-20')
-    navbarMobile.classList.toggle('-top-80')
-    
+    navbarDropdown.classList.toggle('hidden')
+    navbarDropdown.classList.toggle('block')
+}
+
+//dropdown
+const dropdownBtn = document.querySelector('#dropdownBtn')
+const dropdownNavbar = document.querySelector('#dropdownNavbar')
+
+const dropdownHandler = () => {
+    dropdownNavbar.classList.toggle('hidden');
+    dropdownNavbar.classList.toggle('block');
 }
 
 
-hamburgerBtn.addEventListener('click',navHandler)
+//listeners
+hamburgerBtn.addEventListener('click',navbarDropdownHandler)
+dropdownBtn.addEventListener('click', dropdownHandler);
