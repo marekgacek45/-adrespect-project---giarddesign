@@ -11,7 +11,19 @@ module.exports = {
         'black': '#111111',
       },
       maxWidth: {
-        'nav': '1262px',
+        'small':'1040px',
+        'medium': '1262px',
+        'large':'1440px'
+      },
+      width: {
+        '45':'45%',
+
+      },
+      borderWidth: {
+        '1': '1px',
+      },
+      fontSize: {
+        '28': '28px',
       },
     },
   },
