@@ -25,6 +25,10 @@ module.exports = {
       fontSize: {
         '28': '28px',
       },
+      backgroundImage: {
+        'slide-1': "url('/dist/img/slide1.jpg')",
+        'footer-texture': "url('/img/footer-texture.png')",
+      }
     },
   },
   plugins: [],
