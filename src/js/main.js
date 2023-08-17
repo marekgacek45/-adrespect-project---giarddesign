@@ -1,4 +1,3 @@
-
 //mobile menu
 const hamburgerBtn = document.querySelector('#hamburgerBtn')
 const navbarDropdown = document.querySelector('#navbarDropdown')
@@ -81,6 +80,9 @@ function startSlider() {
 }
 
 startSlider();
+
+//masonry
+
 
 //listeners
 hamburgerBtn.addEventListener('click',navbarDropdownHandler)

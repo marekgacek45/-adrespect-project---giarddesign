@@ -5,28 +5,33 @@
 @tailwind components;
 @tailwind utilities;
 
-
-html{
-    font-family: 'Inter', sans-serif;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
+html {
+	font-family: 'Inter', sans-serif;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
 }
 
-h1,h2,h3,h4,h5,h6{
-    font-family: 'Montserrat', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Montserrat', sans-serif;
 }
 
 @keyframes slideIn {
-    from {
-        opacity: 0;
-        transform: translateX(100%);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
+	from {
+		opacity: 0;
+		transform: translateX(100%);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
 }
 
 .animate-slide {
-    animation: slideIn 0.5s ease-in-out;
+	animation: slideIn 0.5s ease-in-out;
 }
+

@@ -9,7 +9,10 @@ module.exports = {
         'grey': '#F5F0EC',
         'white': '#FFFFFF',
         'black': '#111111',
+        'custom-color-start': '#DCC1AB',
+        'custom-color-end': '#D6B79E',
       },
+     
       maxWidth: {
         'small':'1040px',
         'medium': '1262px',
@@ -31,6 +34,7 @@ module.exports = {
       backgroundImage: {
         'slide-1': "url('/dist/img/slide1.jpg')",
         'footer-texture': "url('/img/footer-texture.png')",
+       
       }
     },
   },
