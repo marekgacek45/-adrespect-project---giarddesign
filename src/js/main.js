@@ -17,6 +17,9 @@ const dropdownHandler = () => {
     dropdownNavbar.classList.toggle('block');
 }
 
+//searchbar
+
+
 
 //slider
 
@@ -90,6 +93,7 @@ const masonryHandler = () =>{
 test.classList.toggle('hidden')
 }
 //listeners
+
 masonryBtn.addEventListener('click',masonryHandler)
 hamburgerBtn.addEventListener('click',navbarDropdownHandler)
 dropdownBtn.addEventListener('click', dropdownHandler);

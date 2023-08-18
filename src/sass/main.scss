@@ -35,3 +35,10 @@ h6 {
 	animation: slideIn 0.5s ease-in-out;
 }
 
+.searchForm:hover .searchInput, .searchForm:valid .searchInput{
+	width: 200px;
+}
+
+.searchForm:valid {
+	width: 224px;
+}
