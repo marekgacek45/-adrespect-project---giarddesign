@@ -148,13 +148,33 @@ window.addEventListener("scroll", () => {
     const cardLeft = document.querySelector("#cardLeft");
     const cardCenter = document.querySelector("#cardCenter");
     const cardRight = document.querySelector("#cardRight");
-    const targetPosition = cardLeft.getBoundingClientRect().top;
+    const cardText = document.querySelector("#cardText");
+    const cardsPosition = cardLeft.getBoundingClientRect().top;
+    
+    const realisationsText = document.querySelector('#realisationsText')
+    const realisationsImg = document.querySelector('#realisationsImg')
+    const realisationsTextPosition = realisationsText.getBoundingClientRect().top;
+
+    const masonryFirstItem = document.querySelector('.first-item')
+    const masonryItems = document.querySelectorAll('.item')
+    const masonryFirstItemPosition = masonryFirstItem.getBoundingClientRect().top;
+
     const windowHeight = window.innerHeight;
 
-    if (targetPosition < windowHeight) {
+    if (cardsPosition < windowHeight) {
       cardLeft.classList.add("animate-rollInLeft");
       cardCenter.classList.add("animate-rollInTop");
       cardRight.classList.add("animate-rollInRight");
+      cardText.classList.add("animate-trackingInContract");
+    }
+    if (realisationsTextPosition < windowHeight) {
+     realisationsText.classList.add("animate-focusTextFwd");
+     realisationsImg.classList.add("animate-titlInTop");
+    
+    }
+    if (masonryFirstItemPosition < windowHeight) {
+    masonryItems.forEach(item=>item.classList.add('animate-swingIn'))
+    
     }
   });
 
