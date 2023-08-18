@@ -712,10 +712,6 @@ video {
   max-width: 48rem;
 }
 
-.max-w-4xl{
-  max-width: 56rem;
-}
-
 .max-w-large{
   max-width: 1440px;
 }
@@ -752,10 +748,6 @@ video {
 
 .flex-wrap{
   flex-wrap: wrap;
-}
-
-.items-start{
-  align-items: flex-start;
 }
 
 .items-center{
@@ -1017,10 +1009,6 @@ video {
   padding-top: 0.5rem;
 }
 
-.pt-30{
-  padding-top: 120px;
-}
-
 .pt-32{
   padding-top: 8rem;
 }
@@ -1041,11 +1029,6 @@ video {
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
-}
-
-.text-4xl{
-  font-size: 2.25rem;
-  line-height: 2.5rem;
 }
 
 .text-base{
@@ -1178,6 +1161,7 @@ html {
   font-family: 'Inter', sans-serif;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  scroll-margin-top: 4em;
 }
 
 h1,
@@ -1246,6 +1230,10 @@ h6 {
 
 .animate-fadeOut {
   animation: fadeOut 4s ease-in-out forwards;
+}
+
+.highlight{
+  background-color: pink;
 }
 
 .hover\:w-56:hover{
@@ -1409,10 +1397,6 @@ h6 {
     flex-direction: row;
   }
 
-  .md\:gap-0{
-    gap: 0px;
-  }
-
   .md\:gap-12{
     gap: 3rem;
   }
@@ -1541,16 +1525,16 @@ h6 {
     justify-content: space-between;
   }
 
+  .lg\:gap-0{
+    gap: 0px;
+  }
+
   .lg\:gap-10{
     gap: 2.5rem;
   }
 
   .lg\:gap-8{
     gap: 2rem;
-  }
-
-  .lg\:gap-0{
-    gap: 0px;
   }
 
   .lg\:p-0{
@@ -1687,14 +1671,14 @@ h6 {
     padding-top: 0.75rem;
   }
 
-  .xl\:text-6xl{
-    font-size: 3.75rem;
-    line-height: 1;
-  }
-
   .xl\:text-4xl{
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .xl\:text-6xl{
+    font-size: 3.75rem;
+    line-height: 1;
   }
 
   .xl\:font-normal{

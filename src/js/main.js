@@ -8,6 +8,18 @@ const navbarDropdownHandler = () =>{
     navbarDropdown.classList.toggle('block')
 }
 
+//close nav when click item
+const links = document.querySelectorAll('.nav-item')
+
+const closeNavbarDropdownHandler = () =>{
+    hamburgerBtn.classList.remove('is-active')
+    navbarDropdown.classList.add('hidden')
+    navbarDropdown.classList.remove('block')
+}
+
+
+links.forEach(link=>link.addEventListener('click',closeNavbarDropdownHandler))
+
 //dropdown
 const dropdownBtn = document.querySelector('#dropdownBtn')
 const dropdownNavbar = document.querySelector('#dropdownNavbar')
@@ -18,10 +30,25 @@ const dropdownHandler = () => {
 }
 
 //searchbar
+const searchButton = document.getElementById('searchButton');
+const searchInput = document.getElementById('searchInput');
+const content = document.querySelector('body');
 
+searchButton.addEventListener('click', () => {
+  const searchTerm = searchInput.value.trim();
+  if (searchTerm === '') return;
 
+  const searchRegex = new RegExp(`\\b${searchTerm}\\b`, 'gi');
 
+  content.innerHTML = content.innerHTML.replace(searchRegex, match => `<span class="highlight">${match}</span>`);
 
+  const highlightedElements = content.getElementsByClassName('highlight');
+  if (highlightedElements.length > 0) {
+    
+      highlightedElements[0].scrollIntoView({block:'center', behavior: 'smooth' })
+    }
+    
+});
 
 //slider
 

@@ -14,7 +14,7 @@
   <nav class="bg-white fixed top-0 left-0 right-0 z-50">
     <div class="max-w-medium flex flex-wrap items-center justify-between mx-auto py-4 md:py-6  px-6 xl:px-0">
 
-        <div><a href="#"><img src="dist/img/logo.svg" alt="logo firmy giarddesign"></a></div>
+        <div><a href="#" class="nav-item"><img src="dist/img/assets/logo-giarddesign.svg" alt="logo firmy giarddesign"></a></div>
 
         <button class="hamburger hamburger--collapse lg:hidden p-2" type="button" id="hamburgerBtn">
             <span class="hamburger-box">
@@ -22,85 +22,63 @@
             </span>
         </button>
 
-        <div class="hidden w-full lg:block md:w-auto" id="navbarDropdown">
-            <ul class="
-                flex 
-                flex-col  md:flex-row 
-                font-medium
-                justify-center
-                items-center
-                 p-4 md:p-0 
-                 mt-4  md:mt-0 
-                 border  md:border-0
-                 rounded-lg  
-                 md:gap-12
-                  md:bg-white ">
+        <div class="hidden w-full lg:block lg:w-auto" id="navbarDropdown">
+            <ul
+                class="flex flex-col  md:flex-row font-medium justify-center items-center p-4 md:p-0 mt-4  md:mt-0 border md:border-0 rounded-lg md:gap-12 md:bg-white ">
                 <li>
-                    <button id="dropdownBtn" class="
-                        relative
-                        flex 
-                        items-center 
-                        justify-between 
-                        w-full md:w-auto 
-                        p-3 md:p-0 
-                        md:hover:text-green 
-                        md:hover:bg-transparent">Oferta
-                        <img src="dist/img/dropdown.svg" alt="" class="ml-2">
+                    <button id="dropdownBtn"
+                        class="relative flex items-center justify-between w-full md:w-auto p-3 md:p-0 md:hover:text-green md:hover:bg-transparent">Oferta
+                        <img src="dist/img/icons/dropdown.svg" alt="" class="ml-2">
                     </button>
                     <!-- Dropdown menu -->
-                    <div id="dropdownNavbar" class="
-                        md:absolute
-                        z-50 
-                        hidden 
-                        font-normal 
-                       bg-white
-                        divide-y 
-                        divide-gray-100 
-                        rounded-lg 
-                        shadow 
-                        w-full md:w-44
-                        mb-2 md:mb-0">
+                    <div id="dropdownNavbar"
+                        class=" md:absolute z-50 hidden font-normal bg-white divide-y  divide-gray-100  rounded-lg shadow w-full md:w-44 mb-2 md:mb-0">
                         <ul class="py-2 text-sm">
-                            <li>
-                                <a href="#" class="block px-4 py-2  hover:bg-grey">Projekty</a>
+                            <li class="nav-item">
+                                <a href="#projekty" class="block px-4 py-2  hover:bg-grey">Projekty</a>
                             </li>
-                            <li>
-                                <a href="#" class="block px-4 py-2  hover:bg-grey">Wizualizacje</a>
-                            </li>
-                            <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-grey ">Realizacje</a>
-                            </li>
+                            <li class="nav-item">
+                                <a href="#wizualizacje" class="block px-4 py-2  hover:bg-grey">Wizualizacje</a>
+                            </li >
+                            <li class="nav-item">
+                                <a href="#realizacje" class="block px-4 py-2 hover:bg-grey ">Realizacje</a>
+                            </li >
                         </ul>
 
                     </div>
                 </li>
-                <li>
-                    <a href="#"
-                        class="block py-2 pl-3 pr-4 hover:bg-grey  md:border-0 md:hover:bg-transparent md:hover:text-green md:p-0 ">O firmie</a>
+                <li class="nav-item">
+                    <a href="#o-firmie"
+                        class="block py-2 pl-3 pr-4 hover:bg-grey  md:border-0 md:hover:bg-transparent md:hover:text-green md:p-0 ">O
+                        firmie</a>
                 </li>
-                <li>
-                    <a href="#"
+                <li class="nav-item">
+                    <a href="#realizacje"
                         class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-grey md:border-0 md:hover:bg-transparent md:hover:text-green md:p-0 ">Realizacje</a>
                 </li>
-                <li>
-                    <a href="#"
+                <li class="nav-item">
+                    <a href="#kontakt"
                         class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-grey md:hover:bg-transparent md:border-0 md:hover:text-gree md:p-0 ">Kontakt</a>
                 </li>
                 <li>
-                    
 
-                    <form action="" class="searchForm relative w-10 h-12  p-1 transition-all duration-300 ease-in-out hover:w-56 hover:shadow-md">
-                        <input id="searchInput" type="search" required class="searchInput  w-0 h-10 px-4 py-2 rounded-full transition-all duration-300 ease-in-out transform outline-none  absolute top-1 left-0">
-                        <button><img src="../../dist/img/search.svg" alt="" class="absolute  right-2 transform -translate-y-1/2 w-6 h-6 opacity-70 hover:opacity-100 transition-opacity duration-300 ease-in-out" style="top:25px"></button>
+
+                    <form
+                        class="searchForm relative w-10 h-12  p-1 transition-all duration-300 ease-in-out hover:w-56 hover:shadow-md">
+                        <input id="searchInput" type="search" required
+                            class="searchInput  w-0 h-10 px-4 py-2 rounded-full transition-all duration-300 ease-in-out transform outline-none  absolute top-1 left-0">
+                        <button id="searchButton"><img src="dist/img/icons/search.svg" alt=""
+                                class="absolute  right-2 transform -translate-y-1/2 w-6 h-6 opacity-70 hover:opacity-100 transition-opacity duration-300 ease-in-out"
+                                style="top:25px"></button>
                     </form>
-                    
 
-                            
-                        
-                    </div>
-                </li>
-            </ul>
+
+
+
         </div>
+        </li>
+        </ul>
+    </div>
     </div>
 </nav>
   <header class="mt-16">
@@ -566,7 +544,7 @@
         </div>
         <div class="flex justify-center xl:justify-start flex-col items-center xl:items-start md:w-1/5 gap-6 text-center md:text-left">
            <p class="text-base font-extralight"> Śledź nasze<br> najnowsze realizacje!</p>
-           <button type="button" class=" text-green bg-grey font-normal rounded-full text-base px-6 py-3 hover:bg-grey-dark duration-150"><a href="https://www.instagram.com/" target="_blank">Instagram</a></button>
+           <button type="button" class=" text-green bg-grey font-normal rounded-full text-base px-6 py-3 hover:bg-grey-dark duration-150"><a href="https://instagram.com" target="_blank">Instagram</a></button>
         </div>
     </div>
 </section>
