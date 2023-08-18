@@ -61,7 +61,7 @@ const slides = document.querySelectorAll('.sliderSlide');
 let currentSlide = 0;
 let interval;
 
-function showSlide(index) {
+const showSlide=(index) => {
     slides.forEach((slide, idx) => {
         if (idx === index) {
             slide.style.display = 'flex';
@@ -72,7 +72,7 @@ function showSlide(index) {
     });
 }
 
-function nextSlide() {
+const nextSlide = () =>{
     const nextSlideIndex = (currentSlide + 1) % slides.length;
 
     slides[currentSlide].classList.remove('animate-prevSlide');
@@ -86,10 +86,10 @@ function nextSlide() {
 
     setTimeout(() => {
         slides[nextSlideIndex].classList.remove('animate-slide');
-    }, 1000); // 500ms is the duration of the slideIn animation
+    }, 1000); 
 }
 
-function prevSlide() {
+const prevSlide = () => {
     const prevSlideIndex = (currentSlide - 1 + slides.length) % slides.length;
 
     slides[currentSlide].classList.remove('animate-slide');
@@ -106,17 +106,17 @@ function prevSlide() {
     }, 1000); 
 }
 
-function startAutoSlide() {
+const startAutoSlide =()=> {
     interval = setInterval(() => {
         nextSlide();
     }, 5000);
 }
 
-function stopAutoSlide() {
+const stopAutoSlide = ()=> {
     clearInterval(interval);
 }
 
-function startSlider() {
+const startSlider = ()=> {
     showSlide(currentSlide);
 
     const nextButtons = document.querySelectorAll('.nextButton');
