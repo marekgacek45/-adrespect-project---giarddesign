@@ -8,6 +8,7 @@ module.exports = {
         'green-dark': '#123b20',
         'beige': '#DCC1AB',
         'grey': '#F5F0EC',
+        'grey-dark': '#e0dbd7',
         'white': '#FFFFFF',
         'black': '#111111',
         'custom-color-start': '#DCC1AB',
