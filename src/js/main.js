@@ -142,6 +142,24 @@ function startSlider() {
 
 startSlider();
 
+//animation
+
+window.addEventListener("scroll", () => {
+    const cardLeft = document.querySelector("#cardLeft");
+    const cardCenter = document.querySelector("#cardCenter");
+    const cardRight = document.querySelector("#cardRight");
+    const targetPosition = cardLeft.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (targetPosition < windowHeight) {
+      cardLeft.classList.add("animate-rollInLeft");
+      cardCenter.classList.add("animate-rollInTop");
+      cardRight.classList.add("animate-rollInRight");
+    }
+  });
+
+
+
 //masonry
 const masonryBtn = document.querySelector('#masonryBtn')
 const masonryGradient = document.querySelector('#masonryGradient')
