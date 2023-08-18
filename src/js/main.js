@@ -114,44 +114,51 @@ startSlider();
 //masonry
 const masonryBtn = document.querySelector('#masonryBtn')
 const masonryGradient = document.querySelector('#masonryGradient')
-const test = document.querySelector('#test')
+const hiddenImgs = document.querySelectorAll('.item')
 
 const masonryHandler = () =>{
-test.classList.toggle('hidden')
+hiddenImgs.forEach(img=>img.classList.remove('hidden'))
+hiddenImgs.forEach(img=>img.classList.add('inline-block'))
+masonryGradient.classList.add('animate-fadeOut')
+masonryBtn.classList.add('hidden')
+window.scrollBy(0, -2000); 
 }
 
+masonryBtn.addEventListener('click',masonryHandler)
+
+
 //modal gallery
-document.addEventListener("DOMContentLoaded", function () {
-    const gridItems = document.querySelectorAll(".grid-item");
-    const modal = document.getElementById("modal");
-    const modalImage = document.getElementById("modalImage");
-    const closeModalButton = document.getElementById("closeModal");
+const modal = document.getElementById('modal');
+const modalImage = document.getElementById('modalImage');
+const closeModal = document.getElementById('closeModal');
 
-    gridItems.forEach(item => {
-        const image = item.querySelector("img");
-        image.addEventListener("click", () => {
-            modalImage.src = image.src;
-            modal.classList.remove("hidden");
-        });
+const images = document.querySelectorAll('.item');
+images.forEach(image => {
+    image.addEventListener('click', () => {
+        const src = image.getAttribute('src');
+        modalImage.setAttribute('src', src);
+        modal.classList.remove('hidden');
     });
+});
 
-    closeModalButton.addEventListener("click", () => {
-        closeModal();
-    });
+closeModal.addEventListener('click', () => {
+    modal.classList.add('hidden');
+});
 
-    modal.addEventListener("click", (event) => {
-        if (event.target === modal) {
-            closeModal();
-        }
-    });
-
-    function closeModal() {
-        modal.classList.add("hidden");
+modal.addEventListener('click', (event) => {
+    if (event.target === modal) {
+        modal.classList.add('hidden');
     }
 });
 
+
+
+
+
+
+
 //listeners
 
-masonryBtn.addEventListener('click',masonryHandler)
+
 hamburgerBtn.addEventListener('click',navbarDropdownHandler)
 dropdownBtn.addEventListener('click', dropdownHandler);

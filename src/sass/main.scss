@@ -56,7 +56,21 @@ h6 {
 .searchForm:valid {
 	width: 224px;
 }
-.highlighted {
-	background-color: yellow;
-	font-weight: bold;
-}
+
+
+@keyframes fadeOut {
+	0% {
+		opacity: 1;
+	  }
+	  50% {
+		opacity: 0.5;
+	  }
+	  100% {
+		opacity: 0;
+		visibility: hidden;
+	  }
+	}
+  
+  .animate-fadeOut {
+	animation: fadeOut 4s ease-in-out forwards;
+  }
