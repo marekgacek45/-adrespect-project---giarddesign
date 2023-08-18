@@ -119,6 +119,37 @@ const test = document.querySelector('#test')
 const masonryHandler = () =>{
 test.classList.toggle('hidden')
 }
+
+//modal gallery
+document.addEventListener("DOMContentLoaded", function () {
+    const gridItems = document.querySelectorAll(".grid-item");
+    const modal = document.getElementById("modal");
+    const modalImage = document.getElementById("modalImage");
+    const closeModalButton = document.getElementById("closeModal");
+
+    gridItems.forEach(item => {
+        const image = item.querySelector("img");
+        image.addEventListener("click", () => {
+            modalImage.src = image.src;
+            modal.classList.remove("hidden");
+        });
+    });
+
+    closeModalButton.addEventListener("click", () => {
+        closeModal();
+    });
+
+    modal.addEventListener("click", (event) => {
+        if (event.target === modal) {
+            closeModal();
+        }
+    });
+
+    function closeModal() {
+        modal.classList.add("hidden");
+    }
+});
+
 //listeners
 
 masonryBtn.addEventListener('click',masonryHandler)
