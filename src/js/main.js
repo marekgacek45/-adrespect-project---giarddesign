@@ -21,6 +21,8 @@ const dropdownHandler = () => {
 
 
 
+
+
 //slider
 
 
@@ -32,6 +34,7 @@ function showSlide(index) {
     slides.forEach((slide, idx) => {
         if (idx === index) {
             slide.style.display = 'flex';
+            
         } else {
             slide.style.display = 'none';
         }
@@ -39,13 +42,37 @@ function showSlide(index) {
 }
 
 function nextSlide() {
-    currentSlide = (currentSlide + 1) % slides.length;
+    const nextSlideIndex = (currentSlide + 1) % slides.length;
+
+    slides[currentSlide].classList.remove('animate-prevSlide');
+    slides[nextSlideIndex].classList.add('animate-slide');
+
+    currentSlide = nextSlideIndex;
     showSlide(currentSlide);
+
+    stopAutoSlide();
+    startAutoSlide();
+
+    setTimeout(() => {
+        slides[nextSlideIndex].classList.remove('animate-slide');
+    }, 1000); // 500ms is the duration of the slideIn animation
 }
 
 function prevSlide() {
-    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    const prevSlideIndex = (currentSlide - 1 + slides.length) % slides.length;
+
+    slides[currentSlide].classList.remove('animate-slide');
+    slides[prevSlideIndex].classList.add('animate-prevSlide');
+
+    currentSlide = prevSlideIndex;
     showSlide(currentSlide);
+
+    stopAutoSlide();
+    startAutoSlide();
+
+    setTimeout(() => {
+        slides[prevSlideIndex].classList.remove('animate-prevSlide');
+    }, 1000); // 500ms is the duration of the slideOut animation
 }
 
 function startAutoSlide() {
