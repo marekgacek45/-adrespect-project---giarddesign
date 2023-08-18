@@ -8,6 +8,9 @@ const navbarDropdownHandler = () =>{
     navbarDropdown.classList.toggle('block')
 }
 
+hamburgerBtn.addEventListener('click',navbarDropdownHandler)
+
+
 //close nav when click item
 const links = document.querySelectorAll('.nav-item')
 
@@ -16,7 +19,6 @@ const closeNavbarDropdownHandler = () =>{
     navbarDropdown.classList.add('hidden')
     navbarDropdown.classList.remove('block')
 }
-
 
 links.forEach(link=>link.addEventListener('click',closeNavbarDropdownHandler))
 
@@ -29,7 +31,9 @@ const dropdownHandler = () => {
     dropdownNavbar.classList.toggle('block');
 }
 
+dropdownBtn.addEventListener('click', dropdownHandler);
 //searchbar
+
 const searchButton = document.getElementById('searchButton');
 const searchInput = document.getElementById('searchInput');
 const content = document.querySelector('body');
@@ -99,7 +103,7 @@ function prevSlide() {
 
     setTimeout(() => {
         slides[prevSlideIndex].classList.remove('animate-prevSlide');
-    }, 1000); // 500ms is the duration of the slideOut animation
+    }, 1000); 
 }
 
 function startAutoSlide() {
@@ -177,15 +181,3 @@ modal.addEventListener('click', (event) => {
         modal.classList.add('hidden');
     }
 });
-
-
-
-
-
-
-
-//listeners
-
-
-hamburgerBtn.addEventListener('click',navbarDropdownHandler)
-dropdownBtn.addEventListener('click', dropdownHandler);
