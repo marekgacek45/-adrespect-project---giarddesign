@@ -12,7 +12,9 @@
   <link rel="icon" type="image/png" sizes="16x16" href="dist/favicon/favicon-16x16.png">
   <link rel="manifest" href="dist/favicon/site.webmanifest">
 
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+ 
 </head>
 
 <body>
@@ -23,10 +25,17 @@
   <!--@include 'sections/contact.kit'-->
   <!--@include 'sections/instagram.kit'-->
   <!--@include 'partials/footer.kit'-->
+
+  <!--@include 'sections/gallery.kit'-->
+
   <script src="node_modules/flowbite/dist/flowbite.min.js"></script>
   <script type="module" src="dist/js/main.min.js"></script>
 
-
+  <script>
+    Fancybox.bind('[data-fancybox="gallery"]', {
+      //
+    });    
+  </script>
 </body>
 
 </html>
