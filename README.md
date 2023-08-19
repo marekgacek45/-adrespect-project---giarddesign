@@ -1,7 +1,7 @@
 # AD-RESPECT zadanie rekrutacyjne
 
 
-Cześć!\n
+Cześć! \n
 Zadanie wykonane!
 
 Na tym branchu starałem się wykonać wszystko w jak najbardziej samodzielny sposób.\n
@@ -15,7 +15,7 @@ Poniżej link do strony na githubie:
 
 https://marekgacek45.github.io/-adrespect-project---giarddesign/#
 
-Branch: feature/improveProject:
+# Branch: feature/improveProject:
 
 Na tym branchu postanowiłem nieco zmienić taktykę stylowania elementów, można je zobaczyć w nowo dodanych sekcjach.\n
 Oto ich lista:
