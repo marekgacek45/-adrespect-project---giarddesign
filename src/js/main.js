@@ -165,11 +165,11 @@ window.addEventListener("scroll", () => {
       cardLeft.classList.add("animate-rollInLeft");
       cardCenter.classList.add("animate-rollInTop");
       cardRight.classList.add("animate-rollInRight");
-      cardText.classList.add("animate-trackingInContract");
+      cardText.classList.add("animate-focusTextFwd");
     }
     if (realisationsTextPosition < windowHeight) {
      realisationsText.classList.add("animate-focusTextFwd");
-     realisationsImg.classList.add("animate-titlInTop");
+     realisationsImg.classList.add("animate-fadeIn");
     
     }
     if (masonryFirstItemPosition < windowHeight) {

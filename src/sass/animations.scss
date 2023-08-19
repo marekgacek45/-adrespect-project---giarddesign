@@ -55,7 +55,7 @@
   }
 
   .animate-rollInLeft{
-    animation: roll-in-left 1s ease-in-out
+    animation: roll-in-left 2s ease-in-out
   }
 
   @keyframes roll-in-top {
@@ -70,7 +70,7 @@
   }
 
   .animate-rollInTop{
-    animation: roll-in-top 1s ease-in-out
+    animation: roll-in-top 2s ease-in-out
   }
 
   @keyframes roll-in-right {
@@ -85,7 +85,7 @@
   }
 
   .animate-rollInRight{
-    animation: roll-in-right 1s ease-in-out
+    animation: roll-in-right 2s ease-in-out
   }
 
   @keyframes focus-in-expand-fwd {
@@ -107,19 +107,26 @@
     animation: focus-in-expand-fwd 3s ease-in-out
   }
 
-  @keyframes tilt-in-top-1 {
+  @-webkit-keyframes fade-in {
 	0% {
-	  transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
 	  opacity: 0;
 	}
 	100% {
-	  transform: rotateY(0deg) translateY(0) skewY(0deg);
 	  opacity: 1;
 	}
   }
+  @keyframes fade-in {
+	0% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	}
+  }
+  
 
-  .animate-titlInTop{
-    animation: tilt-in-top-1 2s ease-in-out
+  .animate-fadeIn{
+    animation: fade-in 4s ease-in-out
   }
 
   @keyframes tracking-in-contract-bck {
