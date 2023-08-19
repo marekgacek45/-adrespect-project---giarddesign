@@ -24,8 +24,6 @@ h6 {
 	font-family: 'Montserrat', sans-serif;
 }
 
-
-
 .searchForm:hover .searchInput,
 .searchForm:valid .searchInput {
 	width: 200px;
@@ -35,8 +33,73 @@ h6 {
 	width: 224px;
 }
 
-
-
 .highlight {
 	background-color: pink;
+}
+
+.heroImg {
+	@apply relative ;
+	&::before {
+		@apply bg-cover bg-center bg-no-repeat absolute top-0 left-0 w-full h-full;
+		content: "";
+		background-image: url('../../dist/img/images/realisations.webp');
+		filter: brightness(0.3);
+		z-index: -1;
+	
+	  }
+	
+}
+
+.custom-container {
+	@apply mx-auto 
+	pt-32 
+	pb-24 
+	px-0 sm:px-8 lg:px-0
+}
+
+.heading-container {
+	@apply max-w-small 
+	mx-auto 
+	space-y-3
+	px-8 md:px-16 xl:px-0
+	mb-24;
+	& span {
+		@apply  text-xs;
+	}
+	& h2 {
+		@apply text-3xl sm:text-5xl font-medium;
+		& span {
+			@apply text-3xl sm:text-5xl font-medium italic ;
+		}
+	}
+}
+
+
+.contact-box{
+	@apply space-y-1 flex flex-col justify-center items-center;
+	& h4{
+		@apply font-semibold text-lg
+	}
+	& p{
+		@apply text-base font-light
+	}
+}
+
+.contact-form{
+	@apply mb-6 py-3;
+	& label{
+		@apply block mb-2 text-sm font-medium text-white
+	}
+	& input, textarea{
+		@apply bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green focus:border-green block w-full md:w-3/4 p-2.5
+	}
+
+}
+
+.social-logo{
+	@apply text-white hover:scale-110
+}
+
+.primary-button{
+	@apply  text-grey bg-green font-extralight rounded-full text-base px-6 py-3 hover:bg-green-dark duration-150
 }
