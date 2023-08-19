@@ -1432,10 +1432,6 @@ input:checked + .toggle-bg{
   justify-content: space-evenly;
 }
 
-.gap-16{
-  gap: 4rem;
-}
-
 .gap-2{
   gap: 0.5rem;
 }
