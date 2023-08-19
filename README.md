@@ -16,7 +16,13 @@ Poniżej link do strony na githubie:
 
 https://marekgacek45.github.io/-adrespect-project---giarddesign/#
 
-Tworzę też drugi branch w którym zamierzam dodać kilka nowych sekcji oraz zastąpić pisane samodzielne komponenty gotowymi.
+Branch: feature/improveProject:
+
+Na tym branchu postanowiłem nieco zmienić taktykę stylowania elementów, można je zobaczyć w nowo dodanych sekcjach.
+Oto ich lista:
+- kontakt,
+
+Wykorzystałem bibiliotekę komponentów: https://flowbite.com/
 
 Dziękuje za świetne zadanie oraz możliwośc wykazania się!
 
