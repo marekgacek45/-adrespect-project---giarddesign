@@ -22,7 +22,9 @@ Na tym branchu postanowiłem nieco zmienić taktykę stylowania elementów, moż
 Oto ich lista:
 - kontakt,
 
-Wykorzystałem bibiliotekę komponentów: https://flowbite.com/
+Wykorzystałem bibiliotekę komponentów: https://flowbite.com/.
+
+Galerię zdjęć w modalu stworzyłem za pomocą: https://fancyapps.com/fancybox/getting-started/ . Wygląda świetnie!
 
 
 
