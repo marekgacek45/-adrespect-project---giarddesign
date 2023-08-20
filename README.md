@@ -17,16 +17,13 @@ https://marekgacek45.github.io/-adrespect-project---giarddesign/#
 
 # Branch: feature/improveProject:
 
-Na tym branchu postanowiłem nieco zmienić taktykę stylowania elementów, można je zobaczyć w nowo dodanych sekcjach.
-
-Oto ich lista:
-- kontakt,
+W nowo dodanej sekcji kontak postanowiłem stylować komponenty z wykorzystaniem klas Tailwind ale w arkuszu CSS.
 
 Wykorzystałem bibiliotekę komponentów: https://flowbite.com/.
 
 Galerię zdjęć w modalu stworzyłem za pomocą: https://fancyapps.com/fancybox/getting-started/ . Wygląda świetnie!
 
-
+Tę wersję strony można zobaczyć tutaj: https://giarddesign.marekgacekdev.net.pl/
 
 
 
