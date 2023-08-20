@@ -42,8 +42,8 @@ h6 {
 	&::before {
 		@apply bg-cover bg-center bg-no-repeat absolute top-0 left-0 w-full h-full;
 		content: "";
-		background-image: url('../../dist/img/images/realisations.webp');
-		filter: brightness(0.3);
+		background-image: url('../../dist/img/images/contact.webp');
+		filter: brightness(0.2);
 		z-index: -1;
 	
 	  }

@@ -21,7 +21,7 @@
   <nav class="bg-white fixed top-0 left-0 right-0 z-50">
     <div class="max-w-medium flex flex-wrap items-center justify-between mx-auto py-4 md:py-6  px-6 xl:px-0">
 
-        <div><a href="#" class="nav-item"><img src="dist/img/assets/logo-giarddesign.svg" alt="logo firmy giarddesign"></a></div>
+        <div><a href="/" class="nav-item"><img src="dist/img/assets/logo-giarddesign.svg" alt="logo firmy giarddesign"></a></div>
 
         <button class="hamburger hamburger--collapse lg:hidden p-2" type="button" id="hamburgerBtn">
             <span class="hamburger-box">
@@ -42,20 +42,20 @@
                         class=" md:absolute z-50 hidden font-normal bg-white divide-y  divide-gray-100  rounded-lg shadow w-full md:w-44 mb-2 md:mb-0">
                         <ul class="py-2 text-sm">
                             <li class="nav-item">
-                                <a href="#projekty" class="block px-4 py-2  hover:bg-grey">Projekty</a>
+                                <a href="/oferta.html" class="block px-4 py-2  hover:bg-grey">Projekty</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#wizualizacje" class="block px-4 py-2  hover:bg-grey">Wizualizacje</a>
+                                <a href="/oferta.html" class="block px-4 py-2  hover:bg-grey">Wizualizacje</a>
                             </li >
                             <li class="nav-item">
-                                <a href="#realizacje" class="block px-4 py-2 hover:bg-grey ">Realizacje</a>
+                                <a href="/oferta.html" class="block px-4 py-2 hover:bg-grey ">Realizacje</a>
                             </li >
                         </ul>
 
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a href="#o-firmie"
+                    <a href="/#o-firmie"
                         class="block py-2 pl-3 pr-4 hover:bg-grey  md:border-0 md:hover:bg-transparent md:hover:text-green md:p-0 ">O
                         firmie</a>
                 </li>
@@ -64,7 +64,7 @@
                         class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-grey md:border-0 md:hover:bg-transparent md:hover:text-green md:p-0 ">Realizacje</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#kontakt"
+                    <a href="/#kontakt"
                         class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-grey md:hover:bg-transparent md:border-0 md:hover:text-gree md:p-0 ">Kontakt</a>
                 </li>
                 <li>
@@ -73,7 +73,7 @@
                     <form
                         class="searchForm relative w-10 h-12  p-1 transition-all duration-300 ease-in-out hover:w-56 hover:shadow-md">
                         <input id="searchInput" type="search" required
-                            class="searchInput  w-0 h-10 px-4 py-2 rounded-full transition-all duration-300 ease-in-out transform outline-none  absolute top-1 left-0">
+                            class="searchInput  w-0 h-10 px-4 py-2 rounded-full transition-all duration-300 ease-in-out transform  absolute top-1 left-0 focus:ring-transparent  border-none">
                         <button id="searchButton"><img src="dist/img/icons/search.svg" alt=""
                                 class="absolute  right-2 transform -translate-y-1/2 w-6 h-6 opacity-70 hover:opacity-100 transition-opacity duration-300 ease-in-out"
                                 style="top:25px"></button>
@@ -88,7 +88,8 @@
     </div>
     </div>
 </nav>
-  <header class="mt-16">
+  <main>
+    <header class="mt-16">
     <!--SLIDER CONTAINER-->
     <div id="sliderContainer" class="max-w-large mx-auto px-2 sm:px-10 md:px-2 lg:px-10 xxl:px-0 ">
 
@@ -108,7 +109,7 @@ pb-2 xl:pb-4 w-full sm:w-3/4 xl:w-auto hover:bg-green-dark duration-150"><a href
                     <button type="button" class="bg-transparent text-green border  border-green px-3 xl:px-6 pt-2 xl:pt-3 pb-2 xl:pb-4 rounded-full w-full sm:w-3/4 xl:w-auto hover:shadow-2xl duration-150"><a href="#realizacje" class="flex justify-center items-center gap-2">Zobacz nasze realizacje <img src="dist/img/icons/arrow-down.svg" alt=""></a></button>
                 </div>
             </div>
-            <div class="w-full md:w-1/2 relative">
+            <div class="w-full md:w-1/2 ml:auto relative">
                 <img src="dist/img/slider/slide1.webp" alt="ogród angielski widziany z lotu ptaka" loading="lazy"
                     class="max-h-[350px] md:max-h-[400px] lg:max-h-[460px] xl:max-h-[620px] w-full object-fill">
 
@@ -179,7 +180,7 @@ pb-2 xl:pb-4 w-full sm:w-3/4 xl:w-auto hover:bg-green-dark duration-150"><a href
 
     </div>
 </header>
-  <section id="oferta" class="bg-grey">
+    <section id="oferta" class="bg-grey">
     <div class="max-w-large mx-auto pt-32 pb-24 px-0 sm:px-8 lg:px-0 ">
 
         <div class="
@@ -315,8 +316,8 @@ pb-2 xl:pb-4 w-full sm:w-3/4 xl:w-auto hover:bg-green-dark duration-150"><a href
         </div>
     </div>
 </section>
-  <section id="realizacje" class="bg-beige relative">
-    <div>
+    <section id="realizacje" class="bg-beige relative">
+    <div class="">
         <div class="max-w-large mx-auto pt-32 pb-24 px-4 sm:px-8 lg:px-8">
             <div class="max-w-small mx-auto space-y-3 px-8 md:px-16 xl:px-0 mb-24">
                 <span class="text-green text-xs">Realizacje</span>
@@ -414,7 +415,7 @@ pb-2 xl:pb-4 w-full sm:w-3/4 xl:w-auto hover:bg-green-dark duration-150"><a href
     </div>
 
 </section>
-  <section id="kontakt" class="heroImg">
+    <section id="kontakt" class="heroImg">
 
 
     <div class="custom-container max-w-small ">
@@ -519,7 +520,7 @@ pb-2 xl:pb-4 w-full sm:w-3/4 xl:w-auto hover:bg-green-dark duration-150"><a href
     </div>
     </div>
 </section>
-  <section id="instagram" class="bg-grey py-14">
+    <section id="instagram" class="bg-grey py-14">
     <div class="bg-green text-white max-w-small mx-auto flex flex-col md:flex-row justify-between items-center px-14 md:px-28 py-14 md:py-30 md:w-4/5 gap-9 lg:gap-0">
         <div class="flex flex-col gap-3 text-center md:text-left">
             <h2 class="text-3xl xl:text-4xl font-light">Zostańmy w kontakcie!</h2>
@@ -531,6 +532,7 @@ pb-2 xl:pb-4 w-full sm:w-3/4 xl:w-auto hover:bg-green-dark duration-150"><a href
         </div>
     </div>
 </section>
+  </main>
   <footer class="bg-black text-grey">
     <div class="flex flex-col justify-start py-20 mx-auto px-6 xl:px-0 max-w-small">
         <div>
@@ -568,24 +570,7 @@ pb-2 xl:pb-4 w-full sm:w-3/4 xl:w-auto hover:bg-green-dark duration-150"><a href
     </div>
 </footer>
 
-  <section>
-    <!-- <div>
-        <a data-fancybox="gallery" data-src="https://lipsum.app/id/2/1024x768"
-            data-caption="Optional caption,&lt;br /&gt;that can contain &lt;em&gt;HTML&lt;/em&gt; code">
-            <img src="https://lipsum.app/id/2/200x150" />
-        </a>
 
-        <a data-fancybox="gallery" data-src="https://lipsum.app/id/3/1024x768">
-            <img src="https://lipsum.app/id/3/200x150" />
-        </a>
-
-        <a data-fancybox="gallery" data-src="https://lipsum.app/id/4/1024x768">
-            <img src="https://lipsum.app/id/4/200x150" />
-        </a>
-
-        <a data-fancybox="gallery" href="../../dist/img/masonry/masonry1.webp"><img src="../../dist/img/masonry/masonry1.webp" alt=""></a>
-    </div> -->
-</section>
 
   <script src="node_modules/flowbite/dist/flowbite.min.js"></script>
   <script type="module" src="dist/js/main.min.js"></script>

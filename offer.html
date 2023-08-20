@@ -1,0 +1,127 @@
+
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GiardDesign - oferta</title>
+  <link rel="stylesheet" href="dist/css/main.min.css">
+  <link rel="stylesheet" href="dist/css/output.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="dist/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="dist/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="dist/favicon/favicon-16x16.png">
+  <link rel="manifest" href="dist/favicon/site.webmanifest">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+</head>
+<body>
+      <nav class="bg-white fixed top-0 left-0 right-0 z-50">
+    <div class="max-w-medium flex flex-wrap items-center justify-between mx-auto py-4 md:py-6  px-6 xl:px-0">
+
+        <div><a href="/" class="nav-item"><img src="dist/img/assets/logo-giarddesign.svg" alt="logo firmy giarddesign"></a></div>
+
+        <button class="hamburger hamburger--collapse lg:hidden p-2" type="button" id="hamburgerBtn">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+
+        <div class="hidden w-full lg:block lg:w-auto" id="navbarDropdown">
+            <ul
+                class="flex flex-col  md:flex-row font-medium justify-center items-center p-4 md:p-0 mt-4  md:mt-0 border md:border-0 rounded-lg md:gap-12 md:bg-white ">
+                <li>
+                    <button id="dropdownBtn"
+                        class="relative flex items-center justify-between w-full md:w-auto p-3 md:p-0 md:hover:text-green md:hover:bg-transparent">Oferta
+                        <img src="dist/img/icons/dropdown.svg" alt="" class="ml-2">
+                    </button>
+                    <!-- Dropdown menu -->
+                    <div id="dropdownNavbar"
+                        class=" md:absolute z-50 hidden font-normal bg-white divide-y  divide-gray-100  rounded-lg shadow w-full md:w-44 mb-2 md:mb-0">
+                        <ul class="py-2 text-sm">
+                            <li class="nav-item">
+                                <a href="/offer.html" class="block px-4 py-2  hover:bg-grey">Projekty</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/offer.html" class="block px-4 py-2  hover:bg-grey">Wizualizacje</a>
+                            </li >
+                            <li class="nav-item">
+                                <a href="/offer.html" class="block px-4 py-2 hover:bg-grey ">Realizacje</a>
+                            </li >
+                        </ul>
+
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#o-firmie"
+                        class="block py-2 pl-3 pr-4 hover:bg-grey  md:border-0 md:hover:bg-transparent md:hover:text-green md:p-0 ">O
+                        firmie</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#realizacje"
+                        class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-grey md:border-0 md:hover:bg-transparent md:hover:text-green md:p-0 ">Realizacje</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#kontakt"
+                        class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-grey md:hover:bg-transparent md:border-0 md:hover:text-gree md:p-0 ">Kontakt</a>
+                </li>
+                <li>
+
+
+                    <form
+                        class="searchForm relative w-10 h-12  p-1 transition-all duration-300 ease-in-out hover:w-56 hover:shadow-md">
+                        <input id="searchInput" type="search" required
+                            class="searchInput  w-0 h-10 px-4 py-2 rounded-full transition-all duration-300 ease-in-out transform  absolute top-1 left-0 focus:ring-transparent  border-none">
+                        <button id="searchButton"><img src="dist/img/icons/search.svg" alt=""
+                                class="absolute  right-2 transform -translate-y-1/2 w-6 h-6 opacity-70 hover:opacity-100 transition-opacity duration-300 ease-in-out"
+                                style="top:25px"></button>
+                    </form>
+
+
+
+
+        </div>
+        </li>
+        </ul>
+    </div>
+    </div>
+</nav>
+      <footer class="bg-black text-grey">
+    <div class="flex flex-col justify-start py-20 mx-auto px-6 xl:px-0 max-w-small">
+        <div>
+            <div class="flex flex-col lg:flex-row justify-evenly lg:justify-between items-center mb-16">
+                <a href="#"><img src="dist/img/assets/logo-giarddesign--light.svg" alt="logo firmy giarddesign"
+                        class="mb-4 md:mb-0"></a>
+                <div class="flex flex-col lg:flex-row justify-center items-center gap-6">
+                    <p class="text-base text-center md:text-left"> Daj znać, co możemy dla Ciebie zrobić!</p>
+                    <button type="button"
+                        class=" text-grey bg-green font-extralight rounded-full text-base px-6 py-3 hover:bg-green-dark duration-150">Skontaktuj
+                        się z nami</button>
+                </div>
+            </div>
+            <hr>
+            <div class="flex flex-col xl:flex-row gap-8 xl:gap-0 justify-between items-center mt-16">
+                <ul class="hidden sm:flex gap-8 lg:gap-10 xl:gap-12">
+                    <li><a href="#kontakt" target="_blank" class="text-sm">Kontakt</a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank" class="text-sm">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank" class="text-sm">Facebook</a></li>
+                    <li><a href="https://pl.linkedin.com/" target="_blank" class="text-sm">Linkedin</a></li>
+                </ul>
+                <div class="flex flex-col sm:flex-row gap-6 md:gap-12 xs:mt-8 lg:mt-0">
+                    <a href="tel:000-000-000" class="text-center text-sm">000-000-000</a>
+                    <a href="mailto:giarddesign@kontakt.pl" class="text-sm">giarddesign@kontakt.pl</a>
+                </div>
+            </div>
+        </div>
+        <div
+            class="flex flex-col sm:flex-row gap-4 sm:gap-0 justify-evenly lg:justify-between items-center mt-16 md:mt-28">
+            <p>Prawa zastrzeżone &copy 2022</p>
+            <p>made by </p>
+            <a href="https://adrespect.pl/" target="_blank"><img src="dist/img/assets/logo-adrespect.webp"
+                    alt="logo firmy adRespect" loading="lazy"></a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
